@@ -26,6 +26,10 @@ const NavBar = () =>{
             <Link activeClass="active" to='contact' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Contact</Link>
             <Link activeClass="active" to='footer' spy={true} smooth={true} offset={-100} duration={500} className="listItem" onClick={()=>setShowMenu(false)}>Shop</Link>
         </div>
+        <div className="navMenuFullBg" style={{display: showMenu? 'flex':'none'}} onClick={()=>{
+            setShowMenu(false)
+        }}>
+        </div>
     </nav>
     )
 }

@@ -9,14 +9,15 @@
     padding: 0 1rem;
 }
 .workTitle{
-    margin: 1rem 0;
+    margin-top: 10rem;
     font-size: 3rem;
 }
 .workDesc{
     font-weight: 300;
     font-size: 1rem;
+    margin: 2rem 0;
 }
-.workImgs{
+.projectWorks{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -26,8 +27,12 @@
 }
 .workImg{
     object-fit: cover;
-    height: 15rem;
-    margin: 0.5rem;
+    height: 100%;
+    width: 100%;
+}
+.workImg:hover{
+    scale: 1.1;
+    behavior: initial;
 }
 .btn{
     background: white;
@@ -37,8 +42,49 @@
     margin: 2rem 0;
 }
 
+.workdiv {
+    height: 20rem;
+    width: 20rem;
+    margin: 0.5rem;
+    position: relative;
+    overflow: hidden; /* Ensure text doesn't overflow */
+    border-radius: 1rem;
+}
+
+.projectDetails {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(30, 30, 30, 0.9) 80%, rgba(255, 255, 255, 0) 100%);
+    padding: 1rem;
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.projectName, .projectDesc {
+    margin: 0;
+    color: #dedede; /* Adjust text color */
+}
+
+.projectName {
+    margin-bottom: 0.5rem; /* Add margin between project name and description */
+}
+
+
 @media screen and (max-width:720px){
     .workImg{
-        height: 48vw;
+        object-fit: cover;
+        width: 98vw;
+        height: auto;
+    }
+    .workdiv{
+        height: 40vh;
+        width: 50vh;
+
+    }
+}
+@media screen and (max-width:420px) {
+    .workTitle{
+        font-size: 2.5rem;
     }
 }

@@ -55,3 +55,9 @@
     font-size: 0.8rem;
     font-weight: 100;
 }
+@media screen and (max-width:600px) {
+    .bg{
+        left: 10px;
+        transform: translateX(-50px);
+    }
+}

@@ -12,6 +12,7 @@
     z-index: 3;
     background-color: rgb(30, 30, 30);
 }
+/* desktop menu */
 .logo{
     object-fit: cover;
     height: 1.5rem;
@@ -41,12 +42,20 @@
     border-bottom: 3px solid yellow;
     padding-bottom: 0.3rem;
 }
+/* mobile or samller device menu */
+.navMenuFullBg{
+    z-index: -3;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+}
 .mobMenu{
     display: none;
     object-fit: cover;
     height: 1.8rem;
 }
-/* here */
 .navMenu{ 
     position: absolute;
     top: 80%;
@@ -60,7 +69,6 @@
     padding: 0.5rem;
     height: fit-content;
     min-width: 15rem;
-    /* border: 3px solid yellow; */
     border-radius: 1rem;
 }
 .listItem{
