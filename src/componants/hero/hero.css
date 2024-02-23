@@ -1,0 +1,57 @@
+/* custom fonts */
+@font-face {
+    font-family: LUGRASIMO;
+    src: url('../../fonts/LUGRASIMO-REGULAR.TTF') format('truetype');
+}
+
+.hero{
+    height: calc(100vh - 4rem);
+    width: 100vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+.bg{
+    position: absolute;
+    top: -0rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 70vh;
+}
+.heroContent{
+    height: 100vh;
+    width: 100vw;
+    padding: 2rem;
+    font-family: 'LUGRASIMO', LUGRASIMO sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.introText{
+    font-weight: 100;
+    font-size: 2rem;
+}
+.introName{
+    color: #DE7272;
+    font-weight: 700;
+    font-size: 2rem;
+}
+.introPara{
+    font-size: small;
+    font-weight: 100;
+}
+.btn{
+    background: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-weight: 700;
+    margin: 2rem 0;
+}
+.hello{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
